@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matteo-Vittori</title>
+  <meta name="description" content="Matteo Vittori - Web Designer and developer with a passion for technological innovation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content">
+      <a class="header__logo" href="index.html">
+        <img src="logo.svg" alt="Matteo Web Design">
+      </a>
+      <ul class="header__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about me">About me</a></li>
+        <li><a href="index.html#more">More</a></li>
+      </ul>
+      <div class="header__quick">
+        <div class="icon-hamburger">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <a href="https://wa.me/393319932488?text=Hello%2C+I+am+interested+in+your+services!" target="_blank"><img src="whatsapp.svg" alt="WhatsApp logo" id="logo-whatsapp" class="p-1"></a>
+
+  <div class="contacts">
+    <div class="contact__grid p-3 text-center pb-2">
+      <div class="col-100">
+        <div class="contact__container-1 box-center">
+        <p style="color: #000000; ">
+          Below you will find all my contact information.
+          If you would like more details about a project, you can also fill out the contact form and you will be personally contacted.
+        </p>
+        </div>
+      </div>
+      <div class="col-100" >
+        <div class="contact__container-2 box-center m-2">
+          <ul class="m-0">
+              <li class="mb-1"><a href="https://wa.me/3319932488" target="_blank"><i class="fusion-li-icon fa-mobile-alt fas"></i> Phone</a></li>
+              <li class="mb-1"><a href="https://maps.app.goo.gl/k1TnbKSYsorHDL4d9" target="_blank"><i class="fas fa-map-marker-alt fa-1x"></i> Where to find me</a></li>
+              <li class="mb-1"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1x"></i> Facebook</a></li>
+              <li class="mb-1"><a href="https://www.instagram.com/matte_gum._/" target="_blank"><i class="fab fa-instagram fa-1x"></i> Instagram</a></li>
+              <li><a href="mailto:matteo01.vittori@icloud.com" target="_blank"><i class="fas fa-envelope"></i> Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <span id="contact-me" style="position: absolute; top: 47vh;"></span>
+
+    <div class="contacts__hero mt-4">
+      <form name="contact" method="POST" data-netlify="true" class="contacts__hero__form-container shadow p-3">
+          <input type="text" id="nome" placeholder="Full Name*" required />
+          <input type="email" id="email" placeholder="Email*" required />
+          <input type="text" id="telefono" placeholder="Phone*" required />
+          <textarea id="messaggio" placeholder="Message" rows="4" cols="50"></textarea>
+          <button class="button-2" type="submit" style="width: 100%;"><b>Send</b></button>
+      </form>
+    </div>
+
+    <footer class="top-margin-2 mt-4">
+      <div class="footer__social-section">
+        <div class="social">
+          <a href="https://facebook.com" target="_blank"><img src="facebook.svg" alt="Facebook" class="social__logo"></a>
+          <a href="https://X.com" target="_blank"><img src="twitter.svg" alt="Twitter" class="social__logo"></a>
+          <a href="https://www.instagram.com/matte_gum._/" target="_blank"><img src="instagram.svg" alt="Instagram" class="social__logo"></a>
+          <a href="https://LinkedIn.com" target="_blank"><img src="linkedin.svg" alt="LinkedIn" class="social__logo"></a>
+        </div>
+      </div>
+      <button id="mode-toggle">🌙</button>
+      <p class="footer__text p-1">&copy; 2025 Matteo-Vittori. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
