@@ -64,12 +64,16 @@
     <span id="contact-me" style="position: absolute; top: 47vh;"></span>
 
     <div class="contacts__hero mt-4">
-      <form name="contact" netlify class="contacts__hero__form-container shadow p-3">
-          <input type="text" id="nome" placeholder="Full Name*" required />
-          <input type="email" id="email" placeholder="Email*" required />
-          <input type="text" id="telefono" placeholder="Phone*" required />
-          <textarea id="messaggio" placeholder="Message" rows="4" cols="50"></textarea>
-          <button class="button-2" type="submit" style="width: 100%;"><b>Send</b></button>
+      <form
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact" class="contacts__hero__form-container shadow p-3">
+        <input type="text" name="nome" id="nome" placeholder="Full Name*" required />
+        <input type="email" name="email" id="email" placeholder="Email*" required />
+        <input type="text" name="telefono" id="telefono" placeholder="Phone*" required />
+        <textarea name="messaggio" id="messaggio" placeholder="Message" rows="4" cols="50"></textarea>
+        <button class="button-2" type="submit" style="width: 100%;"><b>Send</b></button>
       </form>
     </div>
 
